@@ -33,6 +33,8 @@ dependencies {
         exclude(group = "org.junit.vintage", module = "junit-vintage-engine")
     }
     testImplementation("io.projectreactor:reactor-test")
+    testImplementation("com.github.tomakehurst:wiremock:2.25.1")
+    testImplementation("io.rest-assured:rest-assured:4.1.2")
 }
 
 tasks.withType<Test> {
